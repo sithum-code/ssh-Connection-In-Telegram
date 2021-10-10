@@ -8,8 +8,8 @@ botPassword = 'batrow'
 
 #Default data for ssh-connection:
 sshUser = 'root'
-sshPassword = 'samanalaya4476Ba'
-sshHost = '128.199.243.241'
+sshPassword = '@Tharuka10300a'
+sshHost = '128.199.134.79'
 sshHomeDirectory = '/'
 
 #Root permission. If 'True" - root allowed
