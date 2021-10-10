@@ -39,10 +39,11 @@ knownUsers = {}
 #
 #
 #Pass all message(exclude /start, /on, /help), if user not activate:
-@bot.message_handler(func=lambda message: \
-                    ((knownUsers.get(message.chat.id) == None) or (knownUsers.get(message.chat.id) == 1)) \
-                    and (message.text != '/start') and (message.text != '/on') \
-                    and (message.text != '/help'), content_types=["text"])
+@bot.message_handler(func=lambda message: 
+                    ((knownUsers.get(message.chat.id) == None) or (knownUsers.get(message.chat.id) == 1)) 
+                    markup_inline = types.InlineKeyboardMarkup()
+    btn1 = InlineKeyboardButton(text = 'Да', callback_data = 'Yes')
+    btn2 = InlineKeyboardButton(text = 'Нет', callback_data = 'No')
 def pass_message(message):
     pass
 
